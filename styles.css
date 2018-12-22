@@ -1,0 +1,79 @@
+/*Digital Clock Folder - CSS
+This project shows & updates a clock continuously on a web page.*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+/*Imports a special font from Google - We can also use the "linking"
+  reference in the HTML head as another option*/
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*Use asterisks to be "universal" or to cover everything*/
+
+html {
+	background: url(MorrisonCountyCourthouse.jpg), rgb(5, 30, 5);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*This adds the background image stretched out & non-repeating*/
+
+.main {
+	background: rgb(128, 64, 0);
+	width: 400px;
+	height: 175px;
+	margin: 100px auto;
+	position: relative;
+	padding: 30px;
+	border-radius: 40px;
+	border-style: double;
+	border-width: 5px;
+	border-color: black;
+}
+/*This sets up the overall clock with borders*/
+/*Notes: "Position: relative" is a "starting point" for
+  referencing the "badge" label below (or else it would
+  be in the top left corner).  "Border-radius" is used for
+  rounded corners.*/
+
+.badge {
+	width: 128px;
+	background: rgb(247, 228, 140);
+	color: black;
+	padding: 5px 10px;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	border-radius: 15px;
+	border-style: double;
+	border-width: 2px;
+	border-color: black;
+	position: absolute;
+	top: -15px;
+	left: 35%;
+}
+/*This sets up the small badge/plaque above the clock*/
+/*Notes: "Dancing Script" fonts are imported at the top with
+  "cursive" as the backup font.  "Position: absolute" on here
+  combined with the "Position: relative" above starts this 
+  badge location at the top left of the overall clock ("main").*/
+
+.clock {
+	background: #000;
+	color: rgb(247, 228, 140);
+	text-align: center;
+	font-size: 60px;
+	height: 100%;
+	padding-top: 15px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	border-radius: 30px;
+}
+/*This sets up the clock's display*/
+/*Notes: "Ubuntu Condensed" fonts are imported at the top
+  with "san-serif" as the backup font.  "Border-radius" adds
+  rounded corners.*/
